@@ -22,5 +22,5 @@ def normalise(row):
         "app_id": row["app_id"].strip(),
         "app_name": row["app_name"].strip(),
         "owner_email": row["owner_email"].strip().lower(),
-        "criticality": (row.get("criticality") or "").strip().lower() or None,
+        "criticality": row["criticality"].strip().lower(),
     }
