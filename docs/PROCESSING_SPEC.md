@@ -16,3 +16,7 @@ Accepted rows have surrounding whitespace trimmed, and `owner_email` and `critic
 ## Outputs
 - Accepted records.
 - Rejected rows, each with its CSV line number and the list of problems.
+
+## Notes
+Rows without `criticality` are rejected rather than imported with a blank value;
+owners must assign a criticality before the application is inventoried.
